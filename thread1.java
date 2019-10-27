@@ -20,13 +20,12 @@ class two extends Thread
         System.out.println("exit b ");
     }
 }
-
- class thread1 {
+class Thread1 {
     public static void main(String arg[])
     {
-        one a1=new one();
-        two b1=new two();
-        a1.start();
-        b1.start();
+        one A=new one();
+        two B=new two();
+        A.start();
+        B.start();
     }
 }
