@@ -7,7 +7,7 @@
 def get_input():
     """to get input from user"""
     numbers = []
-    numbers_string = input("Enter comma separated integer value : ")
+    numbers_string = input("Enter comma separated integer value - ")
     for num in numbers_string.split(','):
         numbers.append(int(num))
     print(numbers)
@@ -36,8 +36,8 @@ def add():
 
 def sub():
     """to input two numbers from user and evaluate their difference"""
-    n1=int(input("enter a no.:"))
-    n2=int(input("enter a no.:"))
+    n1=int(input("enter a no.-"))
+    n2=int(input("enter a no.-"))
     diff=0
     diff=n1-n2
     print(diff)
@@ -45,7 +45,7 @@ def sub():
 
 def mul():
     """to take numbers from users and multiply them"""
-    numbers_string = input("Enter comma separated integer value : ")
+    numbers_string = input("Enter comma separated integer value - ")
     #'1,2,3,4,5,6,7,8,9,10'
     numbers = get_input()
     prod = 1
@@ -56,15 +56,15 @@ def mul():
 
 def div():
     """to take two numbers and divide them""" 
-    n1=int(input("enter a no.:"))
-    n2=int(input("enter a no.:"))
+    n1=int(input("enter a no.-"))
+    n2=int(input("enter a no.-"))
     div=0
     div=n1/n2
     print(div)
     return div
 def square():
     """to take an no and then to find square"""
-    n=int(input("enter a no:"))
+    n=int(input("enter a no-"))
     print(n*n)
     return n*n
 
@@ -82,7 +82,7 @@ def show_menu():
     print("4. Divide")
     print("5. square")
     print("6. Exit the program")
-    option = input("Enter your choice of operation to be performed : ")
+    option = input("Enter your choice of operation to be performed - ")
     print('\n')
     if option == str(6):
         print("exiting the function")
